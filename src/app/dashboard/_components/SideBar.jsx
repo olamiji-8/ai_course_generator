@@ -6,6 +6,10 @@ import { RiLogoutCircleRLine } from "react-icons/ri";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
+
+
+
+
 const SideBar = () => {
   const Menu=[
     {
@@ -49,6 +53,12 @@ const SideBar = () => {
           </Link>
         ))}
       </ul>
+      <div className='absolute bottom-10 w-[80%]'>
+          Progress Bar
+      
+      <h2> 3 out of 5 Course created</h2>
+
+      </div>
     </div>
   )
 }
