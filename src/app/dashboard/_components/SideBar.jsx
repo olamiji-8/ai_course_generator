@@ -3,9 +3,9 @@ import React from 'react'
 import { IoHomeOutline, IoShieldOutline } from "react-icons/io5";
 import { GrProjects } from "react-icons/gr";
 import { RiLogoutCircleRLine } from "react-icons/ri";
+import { Progress } from "../../../components/components/ui/progress";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-
 
 
 
@@ -59,7 +59,7 @@ const SideBar = () => {
 </ul>
 
       <div className='absolute bottom-10 w-[80%]'>
-          Progress Bar
+      <Progress value={33} />
       
       <h2 className='text-sm my-2'> 3 out of 5 Course created</h2>
       <h2 className='text-xs text-gray-500'>Upgrade your plan for unlimited course generate</h2>

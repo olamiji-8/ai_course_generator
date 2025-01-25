@@ -3,6 +3,7 @@
 import { useUser } from '@clerk/nextjs'
 import Link from 'next/link'
 import React from 'react'
+import {Button} from "../../../components/components/ui/button"
 
 const AddCourse = () => {
   const {user} = useUser
