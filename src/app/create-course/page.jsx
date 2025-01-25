@@ -14,12 +14,12 @@ const CreateCourse = () => {
         icon: "icons"
     },
     {
-        id:1,
+        id:2,
         name:"Category",
         icon:"icons"
     },
     {
-        id:1,
+        id:3,
         name:"Category",
         icon:"icons"
     }
