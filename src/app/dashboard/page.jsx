@@ -1,5 +1,6 @@
 import { UserButton } from '@clerk/nextjs'
 import React from 'react'
+import AddCourse from './_components/AddCourse'
 
 const Dashboard = () => {
   return (
@@ -7,6 +8,8 @@ const Dashboard = () => {
       {/* hhhhh
      <UserButton/>
      j */}
+
+     <AddCourse/>
     </div>
   )
 }
