@@ -44,15 +44,20 @@ const SideBar = () => {
       <hr className='my-5'/>
 
       <ul>
-        {Menu.map((item,index)=>(
-          <Link href={item.path}>
-          <div className={`flex items-center gap-2 text-gray-600 p-3 cursor-pointer hover:bg-gray-100 hover:text-black rounded-lg mb-2 ${item.path==path&&"bg-gray-100 text-black"}`}>        
-            <div className='text-2xl'>{item.icon}</div>
-            <h2>{item.name}</h2>
-          </div>
-          </Link>
-        ))}
-      </ul>
+  {Menu.map((item) => (
+    <Link href={item.path} key={item.id}>
+      <div
+        className={`flex items-center gap-2 text-gray-600 p-3 cursor-pointer hover:bg-gray-100 hover:text-black rounded-lg mb-2 ${
+          item.path === path && "bg-gray-100 text-black"
+        }`}
+      >
+        <div className="text-2xl">{item.icon}</div>
+        <h2>{item.name}</h2>
+      </div>
+    </Link>
+  ))}
+</ul>
+
       <div className='absolute bottom-10 w-[80%]'>
           Progress Bar
       

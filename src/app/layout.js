@@ -3,12 +3,12 @@ import "./globals.css";
 import { ClerkProvider, GoogleOneTap } from "@clerk/nextjs";
 
 
-const geistSans = Poppins({
+const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Poppins({
+const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
